@@ -1,0 +1,24 @@
+</div>
+
+<script type="text/javascript" src="../js/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="../js/slick.js"></script>
+<script type="text/javascript">
+    $('.js-slider-for').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        asNavFor: '.js-slider-nav',
+        autoplay: true
+    });
+    $('.js-slider-nav').slick({
+        slidesToShow: 8,
+        slidesToScroll: 3,
+        asNavFor: '.js-slider-for',
+        arrows: false,
+        focusOnSelect: true
+    });
+
+</script>
+
+
+</body>
+</html>

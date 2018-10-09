@@ -1,0 +1,36 @@
+.preview{
+  background-color: $pink;
+  &__inner{
+    background-color: $orange;
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 100%;
+      width: 10px;
+      height: 100%;
+      background-color: #fff;
+      z-index: 1;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 100%;
+      width: 10px;
+      height: 100%;
+      background-color: #fff;
+      z-index: 1;
+    }
+  }
+  &__title{
+    font-size: 24px;
+    line-height: 32px;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 20px;
+  }
+}

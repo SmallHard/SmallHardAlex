@@ -1,0 +1,42 @@
+.footer{
+  width: 100%;
+  position: absolute;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  font-size: 1.5em;
+  font-style: italic;
+  font-weight: bold;
+  left: 0;
+  bottom: 0;
+  margin-top: 10px;
+  &__top{
+    @include mobile{
+      display: block;
+    }
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  &__bottom{
+    @include mobile{
+      display: block;
+    }
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+  }
+
+}
+.address{
+  margin-right: 20px;
+}
+.time{
+
+}
+hr{
+  height: 5px;
+  @include mobile{
+    height: 3px;
+  }
+}

@@ -1,0 +1,43 @@
+
+.btn{
+  display: inline-block;
+  vertical-align: top;
+  text-transform: uppercase;
+  max-width: 100vh;
+  text-align: center;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 12px;
+  padding: 6px;
+  background: $orange;
+  text-decoration: none;
+  &:hover{
+    background: darken($orange, 10%);
+    text-decoration: none;
+    color: darken(#fff, 5%);
+  }
+&__mobile{
+  display: none;
+  @include mobile{
+    display: block;
+  }
+}
+  &__input{
+    display: inline-block;
+    vertical-align: top;
+    text-transform: uppercase;
+    width: 70px;
+    text-align: center;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 10px;
+    background: $orange;
+    text-decoration: none;
+    &:hover{
+      text-decoration: underline;
+      color: darken(#fff, 70%);
+      background-color: lighten($orange, 20%);
+    }
+  }
+}

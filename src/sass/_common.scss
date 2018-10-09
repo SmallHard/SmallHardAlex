@@ -1,0 +1,35 @@
+body{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #414141;
+  @include mobile{
+    font-size: 10px;
+    letter-spacing: 2px;
+  }
+}
+
+ul,
+li,
+nav{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.wrapper{
+  position: relative;
+  min-height: 100vh;
+
+}
+*{
+  @include mobile{
+    margin: 0;
+    padding: 0;
+  }
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  margin-bottom: 30px;
+}
